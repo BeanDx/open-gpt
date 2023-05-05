@@ -1,7 +1,7 @@
 ## :bone: Introduction
-OpenGPT is a free and open source project that uses the openai API to work.  
+__OpenGPT is a free and open source project that uses the openai API to work.__
 
-:ballot_box_with_check: Advantages: 
+__:ballot_box_with_check: Advantages:__
 - Modern ui.
 - Performance thanks to c++.  
 - Long maintainability.  
