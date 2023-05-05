@@ -11,5 +11,9 @@ __:ballot_box_with_check: Advantages:__
 
 <img src="./readme/IMG_20230505_095711_408.jpg"></img>
 
+## __:file_folder:Installing:__
+- for arch linux users install with aur (yay):<br>
+`yay -S open-gpt-bin`
+
 
 There is a binary application for arch linux in aur: <link>, you can use yay to install it: `yay -S open-gpt-bin`.
