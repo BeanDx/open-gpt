@@ -9,7 +9,7 @@ __:ballot_box_with_check: Advantages:__
 
 ## __:framed_picture: Screenshots:__
 
-<img src="./readme/IMG_20230505_095711_408.jpg"></img>
+<img src="./readme/IMG_20230505_095711_408.jpg" width=350px height=350px></img>
 
 ## __:file_folder:Installing:__
 - for arch linux users install with aur (yay):<br>
