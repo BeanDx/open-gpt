@@ -9,4 +9,7 @@ __:ballot_box_with_check: Advantages:__
 
 ## __:framed_picture: Screenshots:__
 
+<img src="./readme/IMG_20230505_095711_408.jpg"></img>
+
+
 There is a binary application for arch linux in aur: <link>, you can use yay to install it: `yay -S open-gpt-bin`.
