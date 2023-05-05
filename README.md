@@ -1,5 +1,5 @@
 ## :bone: Introduction
-__OpenGPT is a free and open source project that uses the openai API to work.__
+__OpenGPT is a free and open source project that uses the openai API to work. Version now [0.0.1]__.
 
 __:ballot_box_with_check: Advantages:__
 - Modern ui.
