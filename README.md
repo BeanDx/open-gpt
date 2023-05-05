@@ -14,6 +14,10 @@ __:ballot_box_with_check: Advantages:__
 ## __:file_folder:Installing:__
 - for arch linux users install with aur (yay):<br>
 `yay -S open-gpt-bin`
+- For users of other distributions, you can install with the command:<br>
+`curl -L <link> -o OpenGPT && chmod +x OpenGPT && ./OpenGPT`
 
-
-There is a binary application for arch linux in aur: <link>, you can use yay to install it: `yay -S open-gpt-bin`.
+## __:vulcan_salute:Todo:__
+- Registration
+- Improve ui
+- Theme toggle
