@@ -11,13 +11,13 @@ __:ballot_box_with_check: Advantages:__
 
 <img src="./readme/IMG_20230505_095711_408.jpg" width=350px height=350px></img>
 
-## __:file_folder:Installing:__
+## __:file_folder: Installing:__
 - for arch linux users install with aur (yay):<br>
 `yay -S open-gpt-bin`<br>
 - For users of other distributions, you can install with the command:<br>
-`curl -L <link> -o OpenGPT && chmod +x OpenGPT && ./OpenGPT`
+`curl -L https://downloads.sourceforge.net/sourceforge/open-gpt/open-gpt.tar.gz -o OpenGPT && chmod +x OpenGPT && ./OpenGPT`
 
-## __:vulcan_salute:Todo:__
+## __:vulcan_salute: Todo:__
 - Registration
 - Improve ui
 - Theme toggle
