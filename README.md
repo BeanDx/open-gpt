@@ -17,7 +17,7 @@ __:ballot_box_with_check: Advantages:__
 
 ## __:file_folder: Installing:__
 - for arch linux users install with aur (yay):<br>
-`yay -S --devel open-gpt-bin`<br>
+`yay -Scc && yay -Sy && yay -S --devel open-gpt-bin`<br>
 - For users of other distributions, you can install with the command:<br>
 `curl -L https://downloads.sourceforge.net/sourceforge/open-gpt/open-gpt.tar.gz -o OpenGPT && chmod +x OpenGPT && ./OpenGPT`
 
