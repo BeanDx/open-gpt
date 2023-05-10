@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OpenGPT</class>
+ <widget class="QMainWindow" name="OpenGPT">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>600</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>600</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>OpenGPT</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/logo.ico</normaloff>:/logo.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #303030;
+/* lolz - #303030  */
+/* my - #191a1e */</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="requestFieldTitle">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>40</y>
+      <width>221</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Open Sans</family>
+      <pointsize>21</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 21pt &quot;Open Sans&quot;;
+color: #D6D6D6;</string>
+    </property>
+    <property name="text">
+     <string>ENTER REQUEST</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="chatgptAnswer">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>350</y>
+      <width>561</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="cursor" stdset="0">
+     <cursorShape>ForbiddenCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #cdb3d0;
+color: black;
+font-size: 18px;</string>
+    </property>
+    <property name="lineWidth">
+     <number>50</number>
+    </property>
+    <property name="readOnly">
+     <bool>false</bool>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:18px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="requestAnswerTitle">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>310</y>
+      <width>241</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Open Sans</family>
+      <pointsize>21</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 21pt &quot;Open Sans&quot;;
+color: #D6D6D6;</string>
+    </property>
+    <property name="text">
+     <string>CHATGPT ANSWER</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sendRequestBtn">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>260</y>
+      <width>241</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#sendRequestBtn {
+	background-color: rgb(34, 142, 93);
+	
+	font: 12pt &quot;Open Sans&quot;;
+}
+
+
+#sendRequestBtn:hover {
+    background-color: #1a6b46;
+}
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>SEND</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="requestField">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>561</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #cdb3d0;
+color: black;
+font-size: 18px;</string>
+    </property>
+    <property name="placeholderText">
+     <string>Enter your request here...</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="signOnBtn">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>60</y>
+      <width>80</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#signOnBtn {
+	font: 10pt &quot;Sans Serif&quot;;
+	background-color: #228E5D;
+}
+#signOnBtn:hover {
+	background-color: #1a6b46;
+}</string>
+    </property>
+    <property name="text">
+     <string>Sign on</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>91</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resources.qrc">:/logo.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="aboutBtn">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>30</y>
+      <width>80</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#aboutBtn {
+	
+	font: 10pt &quot;Sans Serif&quot;;
+	background-color: #228E5D;
+}
+#aboutBtn:hover {
+	background-color: #1a6b46;
+}</string>
+    </property>
+    <property name="text">
+     <string>About</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAbout_program">
+   <property name="text">
+    <string>About program</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
