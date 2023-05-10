@@ -1,4 +1,4 @@
-### Version 0.0.3:
+#### Version 0.0.3:
 - 10.05.2023
 - Update ui.
 - Add about window.
