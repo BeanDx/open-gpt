@@ -19,6 +19,7 @@
 #include <QString>
 
 #include "signon.h"
+#include "about.h"
 #include <QMessageBox>
 
 OpenGPT::OpenGPT(QWidget *parent)
@@ -97,85 +98,23 @@ void OpenGPT::on_sendRequestBtn_clicked()
 
 
 /*
-#include "opengpt.h"
-#include "ui_opengpt.h"
-
-#include <QtNetwork/QNetworkAccessManager>
-#include <QtNetwork/QNetworkReply>
-#include <QtNetwork/QNetworkRequest>
-#include <QUrl>
-#include <QJsonDocument>
-#include <QJsonObject>
-#include <QJsonArray>
-#include <QTimer> // Добавляем заголовочный файл QTimer
-
-OpenGPT::OpenGPT(QWidget *parent)
-    : QMainWindow(parent)
-    , ui(new Ui::OpenGPT)
-{
-    ui->setupUi(this);
-    ui->sendRequestBtn->setEnabled(true); // Делаем кнопку доступной при запуске приложения
-}
-
-OpenGPT::~OpenGPT()
-{
-    delete ui;
-}
-
-
-void OpenGPT::on_sendRequestBtn_clicked()
-{
-    ui->sendRequestBtn->setEnabled(false); // Делаем кнопку недоступной для нажатия
-    QTimer::singleShot(20000, this, [this](){
-        ui->sendRequestBtn->setEnabled(true); // Через 20 секунд делаем кнопку снова доступной
-    });
-
-    QString requestText = ui->requestField->toPlainText().trimmed();
-    if (requestText.isEmpty()) {
-        ui->chatgptAnswer->setText("Вы ввели пустой запрос!");
-    }
-    else {
-        QNetworkAccessManager *nam = new QNetworkAccessManager(this);
-        QByteArray apiKey = "Bearer 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";
-        QByteArray requestBody = QString("{\"prompt\":\"%1\",\"temperature\":0.7,\"max_tokens\":150}").arg(requestText).toUtf8();
-
-        QNetworkRequest request(QUrl("https://api.openai.com/v1/engines/text-davinci-003/completions?model=text-davinci-003"));
-        request.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
-        request.setRawHeader("Authorization", apiKey);
-
-        QNetworkReply *reply = nam->post(request, requestBody);
-
-        while (!reply->isFinished()) {
-            qApp->processEvents();
-        }
-
-        QByteArray response = reply->readAll();
-
-        // Parse JSON response
-        QJsonDocument jsonResponse = QJsonDocument::fromJson(response);
-        QJsonObject jsonObject = jsonResponse.object();
-        QJsonArray choicesArray = jsonObject.value("choices").toArray();
-        QJsonObject choiceObject = choicesArray.first().toObject();
-        QString textValue = choiceObject.value("text").toString();
-
-        ui->chatgptAnswer->setText(textValue);
-
-        reply->deleteLater();
-        nam->deleteLater();
-    }
-}
-
  */
 
 
 void OpenGPT::on_signOnBtn_clicked()
 {
-    // Создаем диалоговое окно
     signIn signOnDialog(this);
 
     if (signOnDialog.exec() == QDialog::Accepted) {
         QMessageBox::information(this, "Hooray!", "Success!");
         update();
     }
+}
+
+
+void OpenGPT::on_aboutBtn_clicked()
+{
+    about aboutDialog(this);
+    aboutDialog.exec();
 }
 

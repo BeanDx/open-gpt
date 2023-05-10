@@ -20,6 +20,10 @@ private slots:
 
     void on_signOnBtn_clicked();
 
+    void on_label_linkActivated(const QString &link);
+
+    void on_aboutBtn_clicked();
+
 private:
     Ui::OpenGPT *ui;
 };

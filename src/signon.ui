@@ -26,7 +26,7 @@
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: #191a1e;</string>
+   <string notr="true">background-color: #303030;</string>
   </property>
   <widget class="QWidget" name="gridLayoutWidget">
    <property name="geometry">
@@ -107,7 +107,7 @@ font-size: 18px;</string>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: #fff;</string>
+    <string notr="true">color: #D6D6D6;</string>
    </property>
    <property name="text">
     <string>SIGN ON</string>
