@@ -1,3 +1,9 @@
+#### Version 0.0.4:
+- 14.05.2023
+- Update ui.
+- Request bug fix.
+- Added copying response to clipboard.
+
 #### Version 0.0.3:
 - 10.05.2023
 - Update ui.
