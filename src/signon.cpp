@@ -27,6 +27,11 @@ void signIn::on_okBtn_clicked()
 {
     QString token = ui->openAiTokenTextEdit->text();
 
+    if (token.isEmpty()) {
+        QMessageBox::critical(this, "Error", "Token field is empty");
+        return;
+    }
+
     QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName("open-gpt.db");
 
@@ -100,7 +105,8 @@ void signIn::on_viewTokenBtn_clicked()
     }
     if (query.next()) {
         QString token = query.value(0).toString();
-        ui->viewTokenLabel->setText(token);
+//        ui->viewTokenLabel->setText(token);
+        ui->openAiTokenTextEdit->setText(token);
     }
 }
 
