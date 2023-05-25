@@ -5,7 +5,7 @@ __:ballot_box_with_check: Advantages:__
 - Modern ui.
 - Performance thanks to c++.  
 - Long maintainability.  
-- open source.
+- Open source.
 
 ## __:framed_picture: Screenshots:__
 
