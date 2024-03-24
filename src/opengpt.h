@@ -20,9 +20,12 @@ private slots:
 
     void on_signOnBtn_clicked();
 
-    void on_label_linkActivated(const QString &link);
+    // void on_label_linkActivated(const QString &link);
 
     void on_aboutBtn_clicked();
+
+public slots:
+    void on_label_linkActivated(const QString &link);
 
 private:
     Ui::OpenGPT *ui;
